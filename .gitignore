@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+examples/batch_out/*.dxf
+*.dwg
+dwg_in/
+.DS_Store
+.pytest_cache/
+
