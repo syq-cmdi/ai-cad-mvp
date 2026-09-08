@@ -1,0 +1,32 @@
+{
+  "title": "某数据中心园区总平面图（AI生成示例）",
+  "site": {"width": 200000, "depth": 140000},
+  "fire_lanes": [
+    {"id": "L1", "dir": "H", "x": 6000, "y": 6000, "length": 188000, "width": 6000},
+    {"id": "L2", "dir": "H", "x": 6000, "y": 128000, "length": 188000, "width": 6000},
+    {"id": "L3", "dir": "V", "x": 6000, "y": 6000, "length": 128000, "width": 6000},
+    {"id": "L4", "dir": "V", "x": 188000, "y": 6000, "length": 128000, "width": 6000},
+    {"id": "L5", "dir": "V", "x": 97000, "y": 6000, "length": 128000, "width": 6000}
+  ],
+  "buildings": [
+    {"id": "B1", "name": "1#数据中心", "kind": "datacenter", "x": 20000, "y": 40000, "w": 70000, "h": 40000, "floors": 4,
+     "floor_plans": [
+       {"id": "F2", "title": "1#数据中心 二层平面图", "width": 70000, "depth": 40000,
+        "rooms": [
+          {"id": "A", "type": "it_hall", "x": 1000, "y": 1000, "w": 24000, "h": 18000, "cold_aisle": 1200, "hot_aisle": 1200},
+          {"id": "B", "type": "it_hall", "x": 26000, "y": 1000, "w": 24000, "h": 18000, "cold_aisle": 1200, "hot_aisle": 1200},
+          {"id": "P1", "type": "power_room", "x": 51000, "y": 1000, "w": 18000, "h": 8000},
+          {"id": "P2", "type": "power_room", "x": 51000, "y": 10000, "w": 18000, "h": 9000},
+          {"id": "C1", "type": "cooling_plant", "x": 1000, "y": 22000, "w": 30000, "h": 10000, "chillers": 6, "chiller_w": 2000, "chiller_d": 4000},
+          {"id": "E1", "type": "equipment_room", "x": 32000, "y": 22000, "w": 18000, "h": 10000},
+          {"id": "H1", "type": "corridor", "x": 1000, "y": 33000, "w": 68000, "h": 3000},
+          {"id": "O1", "type": "office", "x": 51000, "y": 22000, "w": 18000, "h": 10000}
+        ]}
+     ]},
+    {"id": "B2", "name": "2#数据中心", "kind": "datacenter", "x": 110000, "y": 40000, "w": 70000, "h": 40000, "floors": 4},
+    {"id": "S1", "name": "110kV变电站", "kind": "substation", "x": 20000, "y": 90000, "w": 30000, "h": 25000},
+    {"id": "C1", "name": "冷冻站", "kind": "cooling_station", "x": 60000, "y": 90000, "w": 30000, "h": 25000},
+    {"id": "D1", "name": "柴发机房", "kind": "diesel", "x": 110000, "y": 90000, "w": 30000, "h": 25000},
+    {"id": "O1", "name": "综合楼", "kind": "office", "x": 150000, "y": 90000, "w": 30000, "h": 25000}
+  ]
+}
