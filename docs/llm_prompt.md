@@ -6,9 +6,15 @@
 {
   "title": "string",
   "room": {"width": int_mm, "depth": int_mm, "wall_t": int_mm},
+  "columns": {"x0": 0, "y0": 0, "dx": int_mm, "dy": int_mm, "nx": int, "ny": int, "size": 600},   // 可选，柱网
+  "doors": [{"wall": "S|N|W|E", "pos": int_mm, "width": 1500}],   // 安全出口，面积>100m² 至少 2 个
+  "main_aisle": int_mm,                                          // 疏散/搬运主通道 ≥1500
+  "ahu": {"count": int, "side": "W|E|N|S"},                      // 精密空调沿墙布置
+  "fire": {"gas": true},                                         // 气体灭火喷头自动布置
   "rack_rows": [
     {"id": "A", "x": int_mm, "y": int_mm, "count": int,
-     "rack_w": 600, "rack_d": 1200, "face": "N|S"}
+     "rack_w": 600, "rack_d": 1200, "face": "N|S",
+     "row_head": true, "cdu": false}                             // 列头柜 / 液冷 CDU（列端）
   ]
 }
 ```
@@ -18,6 +24,8 @@
 2. 机柜列端到墙 ≥ 1000 mm。
 3. 所有坐标为正整数，单位 mm，原点在房间左下角内墙角。
 4. 机柜采用 600×1200 标准柜，同一行机柜连续排布。
+5. 疏散主通道（最下一行机柜到南墙）≥ 1500 mm；有 AHU 的墙侧，机柜列端到该墙 ≥ 3000 mm（AHU 进深 2000 + 1000）。
+6. 面积 > 100 m² 时门（安全出口）不少于 2 个。
 
 # 用户输入示例
 
