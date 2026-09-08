@@ -1,0 +1,11 @@
+{
+  "title": "某IDC 3层A模块 机房平面布置图（AI生成示例）",
+  "room": {"width": 18000, "depth": 12000, "wall_t": 200},
+  "rack_rows": [
+    {"id": "A", "x": 1500, "y": 1500, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "N"},
+    {"id": "B", "x": 1500, "y": 3900, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "S"},
+    {"id": "C", "x": 1500, "y": 6300, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "N"},
+    {"id": "D", "x": 1500, "y": 8700, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "S"}
+  ]
+}
+
