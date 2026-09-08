@@ -1,11 +1,16 @@
 {
   "title": "某IDC 3层A模块 机房平面布置图（AI生成示例）",
+  "meta": {"status": "AI草图-待审核", "rev": 0},
   "room": {"width": 18000, "depth": 12000, "wall_t": 200},
+  "columns": {"x0": 0, "y0": 0, "dx": 9000, "dy": 6000, "nx": 2, "ny": 2, "size": 600},
+  "doors": [{"wall": "S", "pos": 2000, "width": 1500}, {"wall": "S", "pos": 14500, "width": 1500}],
+  "main_aisle": 1800,
+  "ahu": {"count": 4, "side": "E"},
+  "fire": {"gas": true},
   "rack_rows": [
-    {"id": "A", "x": 1500, "y": 1500, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "N"},
-    {"id": "B", "x": 1500, "y": 3900, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "S"},
-    {"id": "C", "x": 1500, "y": 6300, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "N"},
-    {"id": "D", "x": 1500, "y": 8700, "count": 24, "rack_w": 600, "rack_d": 1200, "face": "S"}
+    {"id": "A", "x": 2200, "y": 2000, "count": 18, "rack_w": 600, "rack_d": 1200, "face": "N", "row_head": true, "cdu": true},
+    {"id": "B", "x": 2200, "y": 4400, "count": 18, "rack_w": 600, "rack_d": 1200, "face": "S", "row_head": true, "cdu": true},
+    {"id": "C", "x": 2200, "y": 6800, "count": 18, "rack_w": 600, "rack_d": 1200, "face": "N", "row_head": true, "cdu": true},
+    {"id": "D", "x": 2200, "y": 9200, "count": 18, "rack_w": 600, "rack_d": 1200, "face": "S", "row_head": true, "cdu": true}
   ]
 }
-
